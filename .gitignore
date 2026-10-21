@@ -1,0 +1,19 @@
+# Visual Studio / VS Code
+.vs/
+.vscode/
+*.user
+*.suo
+
+# Compilación .NET
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+
+# Datos generados por el programa (se crearán en la versión final)
+expedientes.txt
+
+# Sistema operativo
+Thumbs.db
+.DS_Store
