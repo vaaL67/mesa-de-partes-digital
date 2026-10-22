@@ -82,6 +82,6 @@ Los casos T-05 a T-10 (validaciones, persistencia, búsqueda por código y orden
 | Diego Alonso Villagas Huamani | N00546269 | @diegovhuamani |
 | Valentino Ettore Flores Carpio | N00551932 | @vaal67 |
 | Diogo David Pérez Piña | N00547056 | @diogo2020pp-spec |
-| Sebastián Paul Ramírez Carbonell | N00540389 | @ |
+| Sebastián Paul Ramírez Carbonell | N00540389 | @oe41 |
 
 **Docente:** César Edinson Aguirre Rodríguez
