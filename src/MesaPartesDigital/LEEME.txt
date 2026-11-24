@@ -1,0 +1,28 @@
+MESA DE PARTES DIGITAL - Windows Forms (C#)
+Curso: Fundamentos de Programación (CIIN1205P)
+
+REQUISITOS: Visual Studio 2022 con la carga de trabajo "Desarrollo de escritorio .NET" (.NET 8).
+
+CÓMO EJECUTAR
+1. Abrir MesaPartesDigital.sln con Visual Studio.
+2. Presionar F5.
+3. Usuario: admin   Contraseña: 1234
+
+FUNCIONES
+- Registro: DNI, nombres y apellidos, tipo de trámite, folios y correo electrónico (todo validado).
+- Gestión: buscar por código o DNI, ordenar (código, fecha, solicitante, trámite, estado; ascendente o
+  descendente), cambiar el estado del expediente seleccionado y ver un resumen por estado y trámite.
+- Notificación electrónica (simulada): al registrar un expediente y al cambiar su estado se agrega una línea
+  a notificaciones.txt con el correo del ciudadano y el mensaje.
+
+ARCHIVOS (junto al ejecutable, en bin\Debug\net8.0-windows\)
+- expedientes.txt     codigo|dni|nombre|tramite|folios|fecha|estado|correo
+                      (los archivos de la versión anterior, de 6 campos, se siguen leyendo)
+- expedientes.bak     copia del archivo antes de la última modificación de un estado
+- notificaciones.txt  fecha|correo|codigo|mensaje
+
+PRUEBAS AUTOMÁTICAS (carpeta MesaPartesDigital.Pruebas, xUnit)
+- Desde una terminal, en la carpeta de la solución:  dotnet test
+- O en Visual Studio: menú Prueba > Explorador de pruebas > Ejecutar todas.
+- Si el proyecto de pruebas no aparece en la solución, agregarlo una sola vez con:
+  dotnet sln MesaPartesDigital.sln add MesaPartesDigital.Pruebas/MesaPartesDigital.Pruebas.csproj
